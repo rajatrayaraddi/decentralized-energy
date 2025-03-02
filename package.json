@@ -1,0 +1,51 @@
+{
+    "name": "decentralized-energy",
+    "version": "1.0.0",
+    "description": "A decentralized energy trading platform using blockchain and smart contracts",
+    "main": "hardhat.config.js",
+    "scripts": {
+      "start": "cd frontend && npm start",
+      "server": "cd backend && node server.js",
+      "compile": "npx hardhat compile",
+      "deploy": "npx hardhat run scripts/deploy.js --network localhost",
+      "test": "npx hardhat test",
+      "lint": "eslint . --fix",
+      "format": "prettier --write .",
+      "frontend-install": "cd frontend && npm install --force",
+      "backend-install": "cd backend && npm install --force"
+    },
+    "dependencies": {
+      "@openzeppelin/contracts": "^5.0.0",
+      "dotenv": "^16.4.0",
+      "ethers": "6.13.5",
+      "express": "^4.18.2",
+      "hardhat": "^2.20.0",
+      "mongoose": "^7.7.0",
+      "web3": "^1.10.0"
+    },
+    "devDependencies": {
+      "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+      "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+      "@nomiclabs/hardhat-ethers": "2.2.3",
+      "@nomiclabs/hardhat-etherscan": "^3.1.0",
+      "@types/node": "^20.11.0",
+      "chai": "^4.3.8",
+      "eslint": "^8.53.0",
+      "eslint-config-airbnb": "^19.0.4",
+      "eslint-config-prettier": "^9.0.0",
+      "eslint-plugin-import": "^2.29.0",
+      "eslint-plugin-prettier": "^5.0.1",
+      "hardhat-gas-reporter": "^1.0.0",
+      "prettier": "^3.1.0"
+    },
+    "engines": {
+      "node": ">=18.0.0",
+      "npm": ">=9.0.0"
+    },
+    "browserslist": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  }
+  
